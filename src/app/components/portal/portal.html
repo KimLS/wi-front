@@ -1,0 +1,26 @@
+<div layout-fill>
+    <md-toolbar class="md-hue-2">
+        <div class="md-toolbar-tools">
+            <h2>
+                <a href ui-sref="portal">
+                    <span>EQEmu Server Manager</span>
+                    <md-tooltip>Home</md-tooltip>
+                </a>
+            </h2>
+            <span flex></span>
+            <h2 class="disable-select">{{$ctrl.getUserName()}}</h2>
+            <md-button ng-click="$ctrl.logout($event)" aria-label="logout" class="md-icon-button">
+                <md-icon class="mdi mdi-logout-variant mdi-24px portal-toolbar-icon"></md-icon>
+                <md-tooltip>Logout</md-tooltip>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-content>
+        <portal-item-group group-title='Manage Server' group-icon='monitor'>
+            <portal-item ui-sref="portal.server-status" item-name="Server Status" item-icon="images/dev/svg/computer.svg"></portal-item>
+            <portal-item ui-sref="portal.launcher-status" item-name="Launcher Status" item-icon="images/dev/svg/hierarchy-structure.svg"></portal-item>
+            <portal-item ui-sref="portal.zone-status" item-name="Zone Status" item-icon="images/dev/svg/computer-1.svg"></portal-item>
+             <portal-item ui-sref="portal.server-config" item-name="Configure" item-icon="images/dev/svg/cogwheel.svg"></portal-item>
+         </portal-item-group>
+    </md-content>
+</div>

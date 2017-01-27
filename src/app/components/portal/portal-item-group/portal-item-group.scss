@@ -1,0 +1,21 @@
+.portal-group {
+    transition: all ease-in-out 0.5s;
+}
+
+.portal-group-collapsed
+{
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.portal-group-container {
+    transition: all ease-in-out 0.5s;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.portal-group-container-not-collapsed
+{
+    max-height: 1000px;
+}

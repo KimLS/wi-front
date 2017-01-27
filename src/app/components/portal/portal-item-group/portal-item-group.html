@@ -1,0 +1,16 @@
+<md-card>
+    <md-card-header>
+        <md-card-header-text>
+            <div class="md-title" layout="row">
+                <span class="disable-select">{{$ctrl.groupTitle}}</span>
+                <span flex></span>
+                <md-button class="md-icon-button" aria-label="control" ng-click="$ctrl.toggle()">
+                    <md-icon class="mdi mdi-chevron-down mdi-24px portal-group" ng-class="{ 'portal-group-collapsed': $ctrl.collapsed }"></md-icon>
+                </md-button>
+            </div>
+        </md-card-header-text>
+    </md-card-header>
+    <md-card-content class="portal-group-container" ng-class="{ 'portal-group-container-not-collapsed': !$ctrl.collapsed }">
+        <ng-transclude ng-show="!$ctrl.collapsed"></ng-transclude>
+    </md-card-content>
+</md-card>
