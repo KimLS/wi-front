@@ -1,6 +1,4 @@
-(function() {
-	'use strict';
+'use strict';
   
-    require('./login/login.js');
-    require('./portal/portal.js');
-})();
+import './login/login.js';
+import './portal/portal.js';

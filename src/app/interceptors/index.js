@@ -1,6 +1,4 @@
-(function() {
-	'use strict';
-  
-    require('./apply-auth.js');
-    require('./check-auth.js');
-})();
+'use strict';
+
+import './apply-auth.js';
+import './check-auth.js';

@@ -1,6 +1,4 @@
-(function() {
-	'use strict';
+'use strict';
   
-    require('./config.js');
-    require('./login.js');
-})();
+import './config.js';
+import './login.js';

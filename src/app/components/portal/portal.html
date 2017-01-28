@@ -17,10 +17,10 @@
     </md-toolbar>
     <md-content>
         <portal-item-group group-title='Manage Server' group-icon='monitor'>
-            <portal-item ui-sref="portal.server-status" item-name="Server Status" item-icon="images/dev/svg/computer.svg"></portal-item>
-            <portal-item ui-sref="portal.launcher-status" item-name="Launcher Status" item-icon="images/dev/svg/hierarchy-structure.svg"></portal-item>
-            <portal-item ui-sref="portal.zone-status" item-name="Zone Status" item-icon="images/dev/svg/computer-1.svg"></portal-item>
-             <portal-item ui-sref="portal.server-config" item-name="Configure" item-icon="images/dev/svg/cogwheel.svg"></portal-item>
+            <portal-item ui-sref="portal.server-status" item-name="Server Status" item-icon="$ctrl.serverStatusIcon"></portal-item>
+            <portal-item ui-sref="portal.launcher-status" item-name="Launcher Status" item-icon="$ctrl.launcherStatusIcon"></portal-item>
+            <portal-item ui-sref="portal.zone-status" item-name="Zone Status" item-icon="$ctrl.zoneStatusIcon"></portal-item>
+            <portal-item ui-sref="portal.server-config" item-name="Configure" item-icon="$ctrl.configureIcon"></portal-item>
          </portal-item-group>
     </md-content>
 </div>

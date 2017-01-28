@@ -1,16 +1,22 @@
 'use strict';
-var $ = global.jQuery = require('jquery');
-require('datatables.net')(jQuery);
+var $ = jQuery = require('jquery');
+require('imports-loader?define=>false!datatables.net')(jQuery);
 
-var angular = require('angular');
-require('angular-material');
-require('angular-ui-router');
-require('angular-loading-bar');
-require('angular-animate');
-require('ngstorage');
-require('angular-datatables');
+import angular from 'angular';
+import 'angular-material';
+import 'angular-ui-router';
+import 'angular-loading-bar';
+import 'angular-animate';
+import 'ngstorage';
+import 'angular-datatables';
+import '../node_modules/angular-material/angular-material.min.css';
+import '../node_modules/angular-loading-bar/build/loading-bar.min.css';
+import '../node_modules/mdi/css/materialdesignicons.min.css';
+import '../node_modules/datatables.net-dt/css/jquery.dataTables.css';
+import '../node_modules/angular-datatables/dist/css/angular-datatables.min.css';
+import './style.scss'
 
-var app = angular.module('app', ['ngMaterial', 'ui.router', 'angular-loading-bar', 'ngAnimate' ,'ngStorage', 'templates', 'datatables']);
+var app = angular.module('app', ['ngMaterial', 'ui.router', 'angular-loading-bar', 'ngAnimate' ,'ngStorage', 'datatables']);
 
 app.config(['$sceDelegateProvider', 'cfpLoadingBarProvider', '$animateProvider', '$compileProvider', '$localStorageProvider', '$sessionStorageProvider', '$httpProvider', 
     function($sceDelegateProvider, cfpLoadingBarProvider, $animateProvider, $compileProvider, $localStorageProvider, $sessionStorageProvider, $httpProvider) {

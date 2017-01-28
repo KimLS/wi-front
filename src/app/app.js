@@ -1,15 +1,16 @@
-(function() {
-	'use strict';
-	
-	var app = angular.module('app');
-	
-	app.component('appRoot', {
-		templateUrl: 'app/app.html',
-		controller: ['$state', function($state) {
-			var self = this;
+'use strict';
 
-            this.$onInit = function () {
-            };
-		}]
-		});
-})();
+import './app.scss';
+import t from './app.html';
+
+var app = angular.module('app');
+
+app.component('appRoot', {
+	template: t,
+	controller: ['$state', function($state) {
+		var self = this;
+
+        this.$onInit = function () {
+        };
+	}]
+});

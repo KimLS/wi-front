@@ -1,5 +1,3 @@
-(function() {
-	'use strict';
+'use strict';
   
-    require('./core.js');
-})();
+import './core.js';
