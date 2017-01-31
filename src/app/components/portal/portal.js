@@ -2,6 +2,12 @@
 
 import './portal-item-group/portal-item-group.js';
 import './portal-item/portal-item.js';
+import './landing/landing.js';
+import './server-status/server-status.js';
+import './launcher-status/launcher-status.js';
+import './zone-status/zone-status.js';
+import './player-status/player-status.js';
+import './server-config/server-config.js';
 import './portal.scss';
 import t from './portal.html';
 
@@ -45,11 +51,6 @@ app.component('portal', {
 			if(!loginState.isLoggedIn()) {
                 $state.go('login');
             };
-
-			self.serverStatusIcon = require('../../../assets/icons/dev/svg/computer.svg');
-			self.launcherStatusIcon = require('../../../assets/icons/dev/svg/hierarchy-structure.svg');
-			self.zoneStatusIcon = require('../../../assets/icons/dev/svg/computer-1.svg');
-			self.configureIcon = require('../../../assets/icons/dev/svg/cogwheel.svg');
         };
 	}]
 });

@@ -10,10 +10,5 @@ app.config(['$stateProvider', '$urlRouterProvider',
 			url: '/login',
 			template: '<login></login>'
 		});
-
-		$stateProvider.state('portal', {
-			url: '/portal',
-			template: '<portal></portal>'
-		});
 	}
 ]);

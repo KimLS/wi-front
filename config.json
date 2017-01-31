@@ -1,3 +1,4 @@
 {
-	"api_url": "http://localhost:9080"
+	"api_url": "http://localhost:9080",
+	"ws_api_url": "ws://localhost:9080"
 }

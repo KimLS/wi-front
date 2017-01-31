@@ -30,8 +30,6 @@ function($rootScope, $http, $httpParamSerializer, $state, $localStorage, $sessio
 			var expire_date = new Date(expires * 1000);
 			var current_date = new Date();
 
-			console.log(current_date, expire_date);
-
 			if(current_date > expire_date) {
 				self.logout();
 			} else {

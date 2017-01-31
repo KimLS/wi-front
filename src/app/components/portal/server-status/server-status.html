@@ -1,0 +1,33 @@
+<md-list>
+    <md-list-item class="md-2-line">
+        <div class="md-list-item-text">
+            <h3>Server</h3>
+            <p><server-config-control key="LongName"></server-config-control> [<server-config-control key="ShortName"></server-config-control>]</p>
+        </div>
+    </md-list-item>
+    <md-list-item class="md-2-line">
+        <div class="md-list-item-text">
+            <h3>Server Status</h3>
+            <p><server-status-control></server-status-control></p>
+        </div>
+    </md-list-item>
+    <md-divider></md-divider>
+    <md-list-item class="md-2-line" ui-sref="portal.launcher-status">
+        <div class="md-list-item-text">
+            <h3>Launchers Online</h3>
+            <p><numeric-status-control path="/api/eqw/getlaunchercount"></numeric-status-control></p>
+        </div>
+    </md-list-item>
+    <md-list-item class="md-2-line" ui-sref="portal.zone-status">
+        <div class="md-list-item-text">
+            <h3>Zones Online</h3>
+            <p><numeric-status-control path="/api/eqw/getzonecount"></numeric-status-control></p>
+        </div>
+    </md-list-item>
+    <md-list-item class="md-2-line" ui-sref="portal.player-status">
+        <div class="md-list-item-text">
+            <h3>Players Online</h3>
+            <p><numeric-status-control path="/api/eqw/getplayercount"></numeric-status-control></p>
+        </div>
+    </md-list-item>
+</md-list>

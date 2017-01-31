@@ -7,7 +7,7 @@ var app = angular.module('app');
 
 app.component('appRoot', {
 	template: t,
-	controller: ['$state', function($state) {
+	controller: ['$state', 'backend', function($state, backend) {
 		var self = this;
 
         this.$onInit = function () {
